@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 24px 0;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      ul {
+        display: flex;
+        column-gap: 20px;
+
+        li {
+          cursor: pointer;
+          a {
+            &.active {
+              text-decoration: underline;
+              text-underline-offset: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
